@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import { isAddress } from '../../utils/index.js'
+// import { isAddress } from '../../utils/index.js'
 import PlaceHolder from '../../assets/placeholder.png'
 import EthereumLogo from '../../assets/eth.png'
 
@@ -70,9 +70,10 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     )
   }
 
-  const path = `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${isAddress(
-    address
-  )}/logo.png`
+  // const path = `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${isAddress(
+  //   address
+  // )}/logo.png`
+  const path = `https://www.daoswap.global/logo128.png`
 
   return (
     <Inline>
